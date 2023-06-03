@@ -12,5 +12,5 @@ public class Singleton {
         return instance;
     }
 
-
+    // Other methods and variables here...
 }
