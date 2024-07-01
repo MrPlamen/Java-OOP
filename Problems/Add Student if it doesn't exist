@@ -88,23 +88,21 @@ public class Student {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(firstName, secondName, age, city);
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return age == student.age &&
-                Objects.equals(firstName, student.firstName) &&
-                Objects.equals(secondName, student.secondName) &&
-                Objects.equals(city, student.city);
+        return age == student.age && firstName.equals(student.firstName) && secondName.equals(student.secondName) && city.equals(student.city);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, secondName, age, city);
     }
 }
 
 /* You must override hashCode() in every class that overrides equals(). Failure to do so will result in a violation of the general contract for Object.hashCode(), 
-which will prevent your class from functioning properly in conjunction with all hash-based collections, including HashMap, HashSet, and Hashtable. */
+which will prevent your class from functioning properly in conjunction with all hash-based collections, including HashMap, HashSet, and Hashtable. 
+DONE WITH IntelliJ  ---->  Generate... ----> hashCode() and equals() */
 
 
