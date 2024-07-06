@@ -25,7 +25,7 @@ class Main {
     myPig.animalSound();
     myDog.animalSound();
   }
-
+}
 
 /* ----------------------RESULT---------------------------
 
