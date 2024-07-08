@@ -1,1 +1,10 @@
+// In the parent class:
 
+    public abstract void eat();
+
+// In the child class:
+
+    @Override
+    public void eat() {
+        setKg(getKg() + 7.50);
+    }
